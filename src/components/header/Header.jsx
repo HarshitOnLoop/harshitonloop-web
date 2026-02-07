@@ -150,7 +150,7 @@ I combine a strong foundation in Java and Data Structures with practical experti
             <a href="https://x.com/HarshitOnLoop" target="_blank" rel="noreferrer">
               <img src="Untitled_design-removebg-preview.png" alt="X" />
             </a>
-            <a href="https://leetcode.com/u/harshit1818/" target="_blank" rel="noreferrer">
+            <a href="https://leetcode.com/u/HarshitOnLoop/" target="_blank" rel="noreferrer">
               <img src="leetcode.png" alt="LeetCode" />
             </a>
           </div>
