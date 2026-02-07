@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Blue Theme */
+    background-color: #caf0f8; 
+    background-image:
+        linear-gradient(to right, #0077b6 2px, transparent 1px),
+        linear-gradient(to bottom, #0077b6 2px, transparent 1px);
+    background-size: 30px 30px;
+    
+    /* Desktop Padding */
+    padding: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        /* On mobile, we ONLY overwrite the padding. 
+           The blue background inherits from above automatically. */
+        padding: 12px;
+    }
+}

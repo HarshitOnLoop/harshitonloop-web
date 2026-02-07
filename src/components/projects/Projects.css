@@ -1,0 +1,446 @@
+/* --- Card Grid Container --- */
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* --- The Card Object --- */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  max-width: 320px;
+  height: 420px; /* Slightly taller for breathing room */
+  perspective: 1000px;
+  margin: auto;
+}
+
+/* --- The 3D Inner Wrapper --- */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
+  transform-style: preserve-3d;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover Effect */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Common Front & Back Styling --- */
+/* --- FIX: Stop bleeding through --- */
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  /* These lines hide the back of the card so it isn't transparent */
+  -webkit-backface-visibility: hidden; /* For Safari/Chrome */
+  backface-visibility: hidden;         /* Standard */
+  
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #1a1a1a; /* Fallback color */
+}
+/* --- FRONT DESIGN --- */
+.flip-front {
+  background: #222; /* Deep dark grey */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #333;
+}
+
+/* Image styling - Full Width */
+.flip-front img {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+  margin: 0;
+}
+
+/* Content Container */
+.flip-front .content-box {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+/* Text on Front */
+.flip-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.flip-desc {
+  font-size: 0.9rem;
+  color: #aaa;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+
+/* --- BACK DESIGN --- */
+/* --- FIX: Solid Background for Back Card --- */
+.flip-back {
+  background-color: #1a1a1a; /* Ensure this is a solid dark color, not transparent */
+  color: white;
+  transform: rotateY(180deg) translateZ(1px); /* translateZ fixes the "see-through" glitch */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  z-index: 2; /* Ensures it sits on top when flipped */
+}
+.flip-back p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+/* --- RESTORED: 3D Pink Buttons --- */
+.btn-group {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-group button {
+  flex: 1;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 12px; /* Slightly rounded, not pill */
+  background: #ff4da6; /* Bright Pink */
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.1s, box-shadow 0.1s;
+  
+  /* The 3D Effect */
+  box-shadow: 
+    0 6px 0 #b30059, /* Dark pink shadow block */
+    0 10px 10px rgba(0,0,0,0.3);
+}
+
+.btn-group button:hover {
+  transform: translateY(-3px); /* Moves up slightly */
+  box-shadow: 
+    0 9px 0 #b30059, 
+    0 15px 20px rgba(0,0,0,0.3);
+}
+
+.btn-group button:active {
+  transform: translateY(3px); /* Presses down */
+  box-shadow: 
+    0 3px 0 #b30059, 
+    0 4px 5px rgba(0,0,0,0.3);
+}
+
+/* Make the second button visually distinct (Blue) */
+.btn-group a:last-child button {
+  background: #00d4ff;
+  box-shadow: 0 6px 0 #008cb3, 0 10px 10px rgba(0,0,0,0.3);
+}
+
+.btn-group a:last-child button:hover {
+  box-shadow: 0 9px 0 #008cb3, 0 15px 20px rgba(0,0,0,0.3);
+}
+
+.btn-group a:last-child button:active {
+  box-shadow: 0 3px 0 #008cb3, 0 4px 5px rgba(0,0,0,0.3);
+}
+
+
+
+/* --- Projects Section Styling --- */
+    
+.projetsection {
+    position: relative; /* for absolute positioning of laptop */
+    margin-top: -16px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    /* Grid background */
+    background-color: #01943B; /* fallback color */
+    background-image:
+        repeating-linear-gradient(
+            0deg,               /* horizontal lines */
+            rgba(255,255,255,0.2), 
+            rgba(255,255,255,0.2) 1px,
+            transparent 1px,
+            transparent 40px      /* gap between lines */
+        ),
+        repeating-linear-gradient(
+            90deg,              /* vertical lines */
+            rgba(255,255,255,0.2),
+            rgba(255,255,255,0.2) 1px,
+            transparent 1px,
+            transparent 40px
+        );
+    
+    padding: 20px; /* optional, for content inside */
+    overflow: hidden; /* keep laptop inside border if rotated */
+}
+
+/* Laptop Image */
+.projetsection .laptop {
+    position: absolute;
+    top: -290px;      /* distance from top */
+    right: -140px;    /* distance from right */
+    width: 600px;   /* adjust size */
+    transform: rotate(-18deg); /* rotate laptop */
+    z-index: 10;    /* make sure it is above the grid */
+}
+.projects {
+  margin-bottom: 40px;
+}
+.projects h1{
+  font-family: "Permanent Marker", cursive;
+  font-weight: 100;
+  color: rgb(0, 0, 0);
+text-transform: uppercase;
+  font-size: 110px;
+margin: 0;
+}
+
+
+
+.paper {
+  --paper-dark: #ffdd00;
+  --paper-color: #ffdd00;
+
+  position: relative;
+  display: flex;
+  align-items: center;   /* center vertically */
+  padding-left: 80px;   /* space for pin only */
+width: 700px;
+height: 150px;
+  background: linear-gradient(135deg, var(--paper-dark) 30%, var(--paper-color));
+  transform: rotate(4deg);
+  transform-origin: top left;
+  box-shadow: 
+    0 5px 15px rgba(0, 0, 0, 0.3),    /* big soft shadow */
+    0 3px 5px rgba(0, 0, 0, 0.2),     /* mid shadow */
+    0 1px 2px rgba(0, 0, 0, 0.4);     /* crisp edge shadow */
+
+}
+
+.pin {
+  --pin-color: #d02627;
+  --pin-dark: #9e0608;
+  --pin-light: #fc7e7d;
+
+  position: absolute;
+  left: 20px;
+  width: 60px;
+  height: 50px;
+}
+
+.shadow {
+  position: absolute;
+  top: 18px;
+  left: -8px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: radial-gradient(var(--paper-shadow), 20%, rgba(201, 191, 141, 0));
+}
+
+.metal {
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  background: linear-gradient(to right, #808080, 40%, #eae8e8, 50%, #808080);
+  border-radius: 0 0 30% 30%;
+  transform: rotate(50deg);
+  transform-origin: bottom left;
+  top: 15px;
+  border-bottom: 1px solid #808080;
+}
+
+.bottom-circle {
+  position: absolute;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--pin-color);
+  background: radial-gradient(
+    circle at bottom right,
+    var(--pin-light),
+    25%,
+    var(--pin-dark),
+    90%,
+    var(--pin-color)
+  );
+}
+
+/* Barrel */
+.bottom-circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 20px;
+  height: 30px;
+  transform: rotate(55deg);
+  transform-origin: 100% 100%;
+  border-radius: 0 0 40% 40%;
+  background: linear-gradient(
+    to right,
+    var(--pin-dark),
+    30%,
+    var(--pin-color),
+    90%,
+    var(--pin-light)
+  );
+}
+
+/* Top circle */
+.bottom-circle::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at right,
+    var(--pin-light),
+    30%,
+    var(--pin-color),
+    var(--pin-dark) 80%
+  );
+}
+#card3 .flip-front { box-shadow: none;} /* Yellow */
+.blankspace {
+  height: auto;
+ }
+
+
+ .contact {
+      background-color: #0084ff;
+      width: 100%;                  /* full width */
+      border-top-left-radius: 50% ;  /* smooth curve */
+      border-top-right-radius: 50% ; /* smooth curve */
+      position: relative;
+      z-index: 100;
+      margin-top: -830px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+ 
+}
+
+@media screen and (max-width: 768px) {
+
+ .projetsection .laptop { 
+    width: 270px; top: -138px; right: -120px;
+        transform: rotate(-12deg); /* rotate laptop */
+
+ }
+
+ .paper { 
+        width: 250px; 
+        height: 60px;
+         padding-left: 50px; 
+         transform: rotate(2deg); 
+         padding-left: 70px;   
+    }
+   
+     .projects h1 {
+        font-size: 28px;
+    }
+    /* 2 cards per row for tablets and mobiles */
+    .cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding-top: 10px;
+          margin: 0 -75px
+
+    }
+    
+
+
+}
+
+/* --- MOBILE REPAIRS --- */
+@media screen and (max-width: 768px) {
+
+  /* 1. Fix the Container Overflow */
+  .cards-wrapper {
+    display: flex;          /* Use Flex instead of Grid for better control on mobile */
+    flex-direction: column; /* Stack them vertically */
+    align-items: center;    /* Center align everything */
+    padding: 20px 10px;     /* Very small side padding to prevent scroll */
+    margin: 0;              /* Remove outside margins */
+    width: 100%;            /* Ensure it doesn't exceed screen width */
+    box-sizing: border-box; /* Keeps padding inside the width calculation */
+  }
+
+  /* 2. Resize the Card to fit the screen */
+  .flip-card {
+    width: 90%;             /* 90% of screen width */
+    max-width: 300px;       /* Stop it from getting too wide */
+    height: 380px;          /* Shorter height */
+    margin-bottom: 30px;    /* Space between cards */
+  }
+
+  /* 3. Shrink Image to give text room */
+  .flip-front img {
+    height: 45%;            /* Image takes less than half height */
+  }
+
+  /* 4. Fix BIG Text on Front */
+  .flip-title {
+    font-size: 1.1rem;      /* Much smaller title (was 1.5rem) */
+    margin: 15px 0 8px 0;
+  }
+
+  .flip-desc {
+    font-size: 0.85rem;     /* Smaller description text */
+    line-height: 1.4;
+    padding: 0 15px;        /* Ensure text doesn't hit edges */
+  }
+
+  /* 5. Fix Text on Back */
+  .flip-back {
+    padding: 15px;          /* Less padding inside */
+  }
+
+  .flip-back p {
+    font-size: 0.8rem;      /* Smaller text on back */
+    line-height: 1.4;
+  }
+  
+  .long-desc {
+    font-size: 0.8rem;      /* Specifically target long description */
+  }
+
+}
