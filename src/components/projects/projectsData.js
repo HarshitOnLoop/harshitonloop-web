@@ -3,7 +3,7 @@
 const projectsData = [
   {
     id: 1,
-    img: "src/components/projects/imgp/emss.png",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZKzlEh0-xEW8PEO_lnOUeNPjfkcWytZ6e22RLEQ_fHe3COwPcb3z7OzZSVSUmX0AYPt2CmFjaySCy5K8GDEroEsYdDd0LmGNPZHPFO5OR3cKN9w7HT6QeuuwjfWh33DenVounZaEn0oBsaRKTr24srLNXg3-aevl2NhZmXkin_2ZeTRMrKPtbNrQRYdOX/s320/emss.png",
     title: "Employee Management System",
     desc: "Employee Management System.",
 longDesc: "Full-stack HR tool featuring secure authentication, payroll automation, and attendance tracking.",
