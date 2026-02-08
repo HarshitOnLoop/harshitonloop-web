@@ -1,57 +1,73 @@
 import React from "react";
 import "./Projects.css"; 
-import projectsData from "./projectsData"; // Import your new data file
+import projectsData from "./projectsData"; 
 
 function Projects() {
   return (
-    <div className="projetsection">
-      <img src="macbook.png" className="laptop" alt="Laptop" />
+    <div className="prj-section">
+      {/* --- Background Elements --- */}
+      <img src="macbook.png" className="prj-laptop-img" alt="Laptop" />
 
-      <div className="projects">
-        <div className="paper">
-          <div className="pin">
-            <div className="shadow"></div>
-            <div className="metal"></div>
-            <div className="bottom-circle"></div>
+      <div className="prj-header-wrapper">
+        <div className="prj-paper-note">
+          <div className="prj-pin-assembly">
+            <div className="prj-pin-shadow"></div>
+            <div className="prj-pin-metal"></div>
+            <div className="prj-pin-head"></div>
           </div>
-          <h1>projects</h1>
+          <h1 className="prj-main-title">projects</h1>
         </div>
       </div>
 
-      <div className="cards-wrapper">
+      {/* --- Card Grid --- */}
+      <div className="prj-grid-container">
         {projectsData.map((project) => (
-          <div key={project.id} id={`card${project.id}`} className="flip-card">
-            <div className="flip-card-inner">
-              
-              {/* FRONT OF CARD */}
-              <div className="flip-front">
-                <img src={project.img} alt={project.title} />
-                <p className="flip-title">{project.title}</p>
-                <p className="flip-desc">{project.desc}</p>
-              </div>
-
-              {/* BACK OF CARD */}
-              <div className="flip-back">
-                <p className="flip-title">More Info</p>
-                <p>{project.longDesc}</p>
-                
-                <div className="btn-group">
-                  {/* These now use the links from your data file */}
-                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-                    <button>Demo</button>
-                  </a>
-                  <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
-                    <button>Code</button>
-                  </a>
-                </div>
-              </div>
-
+          
+          <div key={project.id} className="prj-card">
+            
+            {/* Image Container */}
+            <div className="prj-card-img-wrapper">
+              <img className="prj-card-img" src={project.img} alt={project.title} />
+              <div className="prj-card-overlay"></div> 
             </div>
+
+            {/* Content Container */}
+            <div className="prj-card-content">
+              <h3 className="prj-card-title">{project.title}</h3>
+              
+              {/* Short Description */}
+              <p className="prj-card-subtitle">{project.desc}</p>
+              
+              {/* Long Description */}
+              <p className="prj-card-desc">{project.longDesc}</p>
+
+              {/* Footer with Buttons */}
+              <div className="prj-card-footer">
+                <a 
+                  href={project.demoLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="prj-btn prj-btn-primary"
+                >
+                  Live Demo
+                </a>
+                <a 
+                  href={project.codeLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="prj-btn prj-btn-outline"
+                >
+                  View Code
+                </a>
+              </div>
+            </div>
+
           </div>
+
         ))}
       </div>
 
-      <div className="blankspace"></div>
+      <div className="prj-spacer"></div>
     </div>
   );
 }
