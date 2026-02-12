@@ -7,7 +7,7 @@ const projectsData = [
     title: "Employee Management System",
     desc: "Employee Management System.",
 longDesc: "Full-stack HR tool featuring secure authentication, payroll automation, and attendance tracking.",
-    demoLink: "https://employee-management-system-three-gilt.vercel.app/",
+    demoLink: "#",
     codeLink: "https://github.com/HarshitOnLoop/Employee-Management-System"
   },
   {
