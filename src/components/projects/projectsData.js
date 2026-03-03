@@ -8,7 +8,7 @@ const projectsData = [
     desc: "Employee Management System.",
 longDesc: "Full-stack HR tool featuring secure authentication, payroll automation, and attendance tracking.",
     demoLink: "https://uber-ems.vercel.app/",
-    codeLink: "https://github.com/HarshitOnLoop/uber-ems"
+    codeLink: "https://github.com/HarshitOnLoop/Employee-Management-System-uber"
   },
   {
     
