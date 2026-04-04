@@ -11,17 +11,6 @@ longDesc: "Full-stack HR tool featuring secure authentication, payroll automatio
     codeLink: "https://github.com/HarshitOnLoop/Employee-Management-System-uber"
   },
   {
-    
-    id: 2,
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxEp_JeXDDJ9fK_BWwc32hWA17q3tpSFDIPSQwiAzhw4LlSM2qJNcVf0msBxR5BFC8V_txoJTxrOcBGKsPL6J3Vj0MLVlISXWsX5CuPKgUlsGbl_zXDX_ESscJJAL2DHB3dM54iAB41WcAF3P8SDYOTEPPaHF40Qk4sm44MRhVHnsWEjOtSoRvL3qtZGWN/s320/eb.png",
-    title: "EduBuddy 📚",
-    desc: "A collaborative student platform for note sharing and group study goals.",
-    longDesc: "Full-stack educational hub featuring real-time chat, collaborative note sharing, and peer-to-peer study goal tracking.",
-    demoLink: "https://harshitonloop.github.io/edubuddywebsite/",
-    codeLink: "https://github.com/HarshitOnLoop/edubuddy"
-
-  },
-  {
    id: 3, // or whichever ID follows your sequence
     img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEFQoXfmkr8wRGlAkEWqe5W37F3xpkSHcnDJH8lU2gNjgHRA7f-1097ouBfkVKGYJqsvd2dDNmg5og0Npx135TXmCQ21u-Rk0UJNsoEW3e-8Zbd87aoXBatSQYHV5GsmOEezO3UzBEDSef9yZtYe1YKbHhftYlLwrdBQDjrc0-UDRaBoPEHA9iFHZvkJSY/s320/pp.png",
     title: "PassportPro ✈️",
