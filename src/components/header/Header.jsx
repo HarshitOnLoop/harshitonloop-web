@@ -132,7 +132,7 @@ function Header() {
 BUILDING REAL APPS    <span class="icon vscode"></span>
 </h1>
           <p>
-I combine a strong foundation in Java and Data Structures with practical expertise in the MERN Stack, building scalable web applications that solve real-world problems          </p>
+I focus on building user-friendly applications and improving my skills through hands-on projects, aiming to create simple and practical solutions for real-world use cases.     </p>
 
           <button className="delete-button" onClick={popupContact_open}>
             <span className="btn-text">Make a Request</span>
