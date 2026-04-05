@@ -29,27 +29,8 @@ const projectsData = [
     longDesc: "A user-friendly learning platform that helps users practice new languages through simple lessons, interactive content, and community-based learning.",
     demoLink: "https://languagewebsite-swart.vercel.app/",
     codeLink: "https://github.com/HarshitOnLoop/languagewebsite"
-  },
-
-  {
-    id: 5,
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt6aSB7sjCB30Tdovkrrsz-6FgnPSsggGy0xrJMZYKSLXO18zKwxN79_Xd4x2wpPcAOjms9isG9_EdFJAJb2K3Xj9NlyAPbFvhnuGVnxrhq0Ty_ghtIyBp-Eb_K1wlFBbylS-S7Cssuj7frPhFAh_3RFhXz29mU3FC_MH9I9EpE5CUKgON6CbwFr5vGi4Y/s320/sr.png",
-    title: "Screen Recorder 🎥",
-    desc: "A browser-based tool to record and download screen activity.",
-    longDesc: "A web application that uses the MediaRecorder API to capture screen recordings directly in the browser and allows users to preview and download them.",
-    demoLink: "https://screen-recorder-rose.vercel.app/",
-    codeLink: "https://github.com/HarshitOnLoop/Screen-Recorder"
-  },
-
-  {
-    id: 6, 
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGrcAPYLLJL9xbpl5uhRzTJIjJ9NyfwXfzUMPy7ozZ_Pa8gxwZSkXvlOSxZLru2HlHK0uPdL3eO-ai3-qDLyKaJ2xXzwupP_cWd8nNWCJhcHWuhjdk179bGmrggiGnwPMdl8lvK8hFTej1ZjdDFwC_KLUzyACz9eLGLOqtyIWFnwruaYvfzf4u3xmTYSXZ/s320/vr.png",
-    title: "WebRTC Video Call 📞",
-    desc: "A real-time video calling application for seamless communication.",
-    longDesc: "A browser-based video call app using WebRTC for peer-to-peer communication, enabling real-time video and audio without page refresh.",
-    demoLink: "https://video-call-web-application.vercel.app/",
-    codeLink: "https://github.com/HarshitOnLoop/Video-Call-Web-Application"
   }
+ 
 
 ];
 
