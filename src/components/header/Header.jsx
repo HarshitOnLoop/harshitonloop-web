@@ -129,8 +129,7 @@ function Header() {
 
     COMPUTER SCIENCE <br/>
     UNDERGRAD PASSIONATE <br/>
-    ABOUT DSA & DEVELOPMENT
-
+BUILDING REAL-WORLD APPLICATIONS
     <span class="icon vscode"></span>
 </h1>
           <p>
