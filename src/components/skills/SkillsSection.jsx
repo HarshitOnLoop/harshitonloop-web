@@ -12,24 +12,18 @@ const SkillsSection = ({ popupContact_open }) => {
       "css3",
       "JavaScript",
       "WordPress",
-      "Figma",
-      "Tailwind"
+
     ],
     Backend: [
       "Node.js",
       "Express.js",
       "MongoDB",
-      "REST APIs",
-      "JWT Auth",
       "MySQL",
-      "Firebase"
     ],
     Languages: [
       "Java",
       "C++",
       "DSA",
-      "C Language",
-      "Python",
       "Git / GitHub"
     ],
     Marketing: [
