@@ -129,8 +129,7 @@ function Header() {
 
     COMPUTER SCIENCE <br/>
     UNDERGRAD PASSIONATE <br/>
-BUILDING REAL-WORLD APPLICATIONS
-    <span class="icon vscode"></span>
+BUILDING REAL APPS    <span class="icon vscode"></span>
 </h1>
           <p>
 I combine a strong foundation in Java and Data Structures with practical expertise in the MERN Stack, building scalable web applications that solve real-world problems          </p>
