@@ -17,7 +17,6 @@ const Experience = () => {
       id: "blogger", 
       role: "WP Blogger", 
       company: "Self-Employed",
-      date: "Jul 2023 - Present",
       text: "Created SEO-optimized content, managed Facebook Ads, and handled end-to-end WordPress site management." 
     },
     { 
