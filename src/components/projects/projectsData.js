@@ -7,7 +7,7 @@ const projectsData = [
     title: "Employee Management System",
     desc: "A role-based system to manage employees, tasks, attendance, and leaves.",
     longDesc: "A full-stack application with manager and employee dashboards, featuring task assignment, leave management, attendance tracking, and real-time communication.",
-    demoLink: "https://uber-ems.vercel.app/",
+    demoLink: "https://harshitems.vercel.app/",
     codeLink: "https://github.com/HarshitOnLoop/Employee-Management-System-uber"
   },
 
