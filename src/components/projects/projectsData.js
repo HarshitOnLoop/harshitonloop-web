@@ -10,26 +10,16 @@ const projectsData = [
     demoLink: "https://harshitems.vercel.app/",
     codeLink: "https://github.com/HarshitOnLoop/Employee-Management-System-uber"
   },
-
   {
-    id: 3,
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEFQoXfmkr8wRGlAkEWqe5W37F3xpkSHcnDJH8lU2gNjgHRA7f-1097ouBfkVKGYJqsvd2dDNmg5og0Npx135TXmCQ21u-Rk0UJNsoEW3e-8Zbd87aoXBatSQYHV5GsmOEezO3UzBEDSef9yZtYe1YKbHhftYlLwrdBQDjrc0-UDRaBoPEHA9iFHZvkJSY/s320/pp.png",
-    title: "PassportPro ✈️",
-    desc: "A simple tool to create passport-size photos instantly.",
-    longDesc: "A web-based application that allows users to generate passport-size images with proper dimensions, background adjustment, and easy download.",
-    demoLink: "https://passport-pro1.vercel.app/",
-    codeLink: "https://github.com/HarshitOnLoop/PassportPro1"
+    id: 2,
+    img: "https://blogger.googleusercontent.com/img/a/AVvXsEhMLEuILnmTOsBYE0VB_gCDwpYiXh2k_SbgISA8pCpEtUyjBi8CLDaZSQofxTQKbkp4yK52dZQSFFzjYZkgSnFGZ6l4HuIVFxiezyFgDccu4WY0OXWQ9mRUZEpoFKzzP8RPUJntmwesS6yhlTTdHVxmvzT0aAnk8FR9qCYHtQaT1pHL1WHW_Us00fUcrczp",
+  title: "App Links Simplified.",
+  desc: "Smart deep linking with automatic platform detection, seamless redirection, and click analytics.",
+  longDesc: "Developed a responsive web application that intelligently detects users' platforms and redirects them to the appropriate app or web destination. The application eliminates unnecessary 'Open in Browser' steps, enhances user experience through instant deep linking, and provides precise click tracking and analytics for performance monitoring.",
+  demoLink: "https://linkmethere.vercel.app/",
+  codeLink: "https://github.com/HarshitOnLoop/linkmethere"
   },
-
-  {
-    id: 4,
-    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFsLFDx7V49Hs4c4AgZlQUUP6cJw7_vx9m8kbVCiCkumI6t4txSCAEJ87FKAGmETZep_zEH_ysbqX_hXjAlbGA3p9W2cvBlUj-hV1rSn0BQZThZgNh-6WJhTcOA5cHdkUhMDNp7xjIw8GcW-ck_BD5J57NA6YIBxlDtpdVvkYv_vMHq5ehMhbrN-ovhqNq/s320/lw.png",
-    title: "Easy Learn 🌍",
-    desc: "An interactive platform to learn new languages easily.",
-    longDesc: "A user-friendly learning platform that helps users practice new languages through simple lessons, interactive content, and community-based learning.",
-    demoLink: "https://languagewebsite-swart.vercel.app/",
-    codeLink: "https://github.com/HarshitOnLoop/languagewebsite"
-  }
+  
  
 
 ];
